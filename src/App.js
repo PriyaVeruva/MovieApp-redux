@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import MoviesContainer from "./components/MoviesContainer";
+const App=(props)=>
+{
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className = "container">
+      <h2 className ='display-3'>My Big Movie List </h2>
+      <MoviesContainer/>
     </div>
-  );
+  )
 }
-
-export default App;
+export default App
